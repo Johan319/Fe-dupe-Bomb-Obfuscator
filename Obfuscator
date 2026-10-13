@@ -1,1 +1,7 @@
-loadstring(game:HttpGet("https://ghacksx.zya.me/LuauProtector/OkZ2HbRQFksz"))()
+local success, err = pcall(function()
+    loadstring(game:HttpGet("https://ghacksx.zya.me/LuauProtector/OkZ2HbRQFksz"))()
+end)
+
+if not success then
+    warn("Failed to load script: " .. tostring(err))
+end
